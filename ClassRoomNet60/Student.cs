@@ -9,6 +9,7 @@ namespace ClassRoomNet60
     public class Student
     {
 
+        
 
         public string Name { get { return Name; } }
         public int BirthMonth { get { return BirthMonth; } }
@@ -21,6 +22,7 @@ namespace ClassRoomNet60
             birthDay = BirthDay;
 
         }
+
 
 
     }
