@@ -23,34 +23,11 @@ studentDataList.Add(studentKevin);
 
 foreach (Student student in studentDataList)
 {
-    Console.WriteLine(student);
+    Console.WriteLine($"{student}. Årstiden er: {student.Season()}");
   
 }
 
-string Season(Student student)
-{
-    //12, 1, 2 winter
-    if (student.BirthMonth == 1 || student.BirthMonth == 2 || student.BirthMonth == 12)
-    {
-        return "Winter";
-    }
-    //3,4,5 spring
-    else if (student.BirthMonth == 3 || student.BirthMonth == 4 || student.BirthMonth == 5)
-    {
-        return "Spring - at last!";
-    }
-    //6,7,8 summer
-    else if (student.BirthMonth == 6 || student.BirthMonth == 7 || student.BirthMonth == 8)
-    {
-        return "Summer";
-    }
-    //9,10,11 autumn
-    else
-    {
-        return "Autumn";
-    }
-    
-}
+
 
 
 

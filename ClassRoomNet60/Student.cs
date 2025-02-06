@@ -26,6 +26,31 @@ namespace ClassRoomNet60
             return ($"Name:{Name}, birth month, {BirthMonth}, birth day  {BirthDay}");
             
         }
+        public string Season()
+        {
+            //12, 1, 2 winter
+            if (BirthMonth == 1 || BirthMonth == 2 || BirthMonth == 12)
+            {
+                return "Winter";
+            }
+            //3,4,5 spring
+            else if (BirthMonth == 3 || BirthMonth == 4 || BirthMonth == 5)
+            {
+                return "Spring - at last!";
+            }
+            //6,7,8 summer
+            else if (BirthMonth == 6 || BirthMonth == 7 || BirthMonth == 8)
+            {
+                return "Summer";
+            }
+            //9,10,11 autumn
+            else
+            {
+                return "Autumn";
+            }
+
+        }
+
 
 
 
