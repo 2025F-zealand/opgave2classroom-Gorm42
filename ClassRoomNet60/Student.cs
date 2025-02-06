@@ -17,7 +17,6 @@ namespace ClassRoomNet60
             Name = name;
             BirthMonth = birthMonth;
             BirthDay = birthDay;
-
         }
 
         //public ToString løsning til Task 4.
@@ -26,8 +25,10 @@ namespace ClassRoomNet60
             return ($"Name:{Name}, birth month, {BirthMonth}, birth day  {BirthDay}");
             
         }
+
         public string Season()
         {
+
             //12, 1, 2 winter
             if (BirthMonth == 1 || BirthMonth == 2 || BirthMonth == 12)
             {
@@ -50,6 +51,8 @@ namespace ClassRoomNet60
             }
 
         }
+
+    
 
 
 

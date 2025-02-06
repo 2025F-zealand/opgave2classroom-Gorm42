@@ -24,8 +24,12 @@ studentDataList.Add(studentKevin);
 foreach (Student student in studentDataList)
 {
     Console.WriteLine($"{student}. Årstiden er: {student.Season()}");
-  
+    
 }
+
+d317.SeasonCounter(studentDataList);
+
+
 
 
 

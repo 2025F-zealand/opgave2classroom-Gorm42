@@ -17,14 +17,35 @@ namespace ClassRoomNet60
             className = ClassName;
         }
 
-        //public void PrintStudentList(ClassRoom room)
-        //{
-        //    foreach (Student student in List<Student>)
-        //    {
-        //        Console.WriteLine(student.Name);
-        //        Console.WriteLine(student.BirthDay.ToString());
-        //        Console.WriteLine(student.BirthMonth.ToString());
-        //    }
-        //}
+        int winterCounter;
+        int springCounter;
+        int summerCounter;
+        int autumnCounter;
+
+        public void SeasonCounter(List<Student> StudentList)
+        {            
+            foreach (Student student in StudentList) 
+            {
+                if (student.BirthMonth == 12 || student.BirthMonth == 1 || student.BirthMonth == 2)
+                {
+                    winterCounter++;
+                }
+                else if (student.BirthMonth == 3 || student.BirthMonth == 4 || student.BirthMonth == 5)
+                {
+                    springCounter++;
+                }
+                else if (student.BirthMonth == 6 || student.BirthMonth == 7 || student.BirthMonth == 8)
+                {
+                    summerCounter++;
+                }
+                else
+                {
+                    autumnCounter++;
+                }
+            }
+            Console.WriteLine($"Der er {winterCounter} født om vinteren, {springCounter} født om foråret, {summerCounter} født om sommeren, og {autumnCounter} født i efteråret.");
+            
+        }
+
     }
 }
