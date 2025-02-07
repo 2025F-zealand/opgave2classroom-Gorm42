@@ -23,7 +23,7 @@ namespace ClassRoomNet60
         int autumnCounter;
 
         public void SeasonCounter(List<Student> StudentList)
-        {            
+        {
             foreach (Student student in StudentList) 
             {
                 if (student.BirthMonth == 12 || student.BirthMonth == 1 || student.BirthMonth == 2)

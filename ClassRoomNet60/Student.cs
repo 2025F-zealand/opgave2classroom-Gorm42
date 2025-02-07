@@ -14,9 +14,15 @@ namespace ClassRoomNet60
 
         public Student(string name, int birthMonth, int birthDay)
         {
+            if (birthMonth < 1 || birthMonth > 12)
+            {
+                throw new ArgumentOutOfRangeException(nameof(birthMonth));
+            }
+
             Name = name;
             BirthMonth = birthMonth;
             BirthDay = birthDay;
+
         }
 
         //public ToString løsning til Task 4.
